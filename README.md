@@ -1,27 +1,19 @@
 # DD Flash
 
-Modern GTK4/Libadwaita GUI pro bezpečné zapisování `.iso` a `.img` obrazů na USB disky.
+Modern GTK4/Libadwaita GUI for safely writing `.iso` and `.img` images to USB drives.
 
-## Funkce
+## Features
 
-- **Moderní rozhraní** — GTK4 + Libadwaita, dark-mode friendly
-- **Skutečný progress** — rychlost, ETA, zapsaná data
-- **Bezpečnost** — kontrola removable/USB, blokování systémových disků
-- **Automatická detekce USB** — obnova seznamu při připojení/odpojení
-- **Polkit** — GUI běží jako běžný uživatel, zápis s elevated oprávněmi
-- **Zrušení** — bezpečné přerušení s potvrzením
+- **Modern interface** — GTK4 + Libadwaita, dark-mode friendly
+- **Real-time progress** — speed, ETA, data written
+- **Safety** — removable/USB checks, blocks system disks
+- **Auto USB detection** — refreshes device list on hotplug
+- **Polkit** — GUI runs as normal user, flashing with elevated privileges
+- **Cancellation** — safe interruption with confirmation
 
-## Instalace
+## Installation
 
-### Arch Linux
-
-```bash
-git clone https://github.com/gerchann/dd-flash.git
-cd dd-flash
-./scripts/install.sh
-```
-
-### Fedora
+### Quick Install
 
 ```bash
 git clone https://github.com/gerchann/dd-flash.git
@@ -29,23 +21,30 @@ cd dd-flash
 ./scripts/install.sh
 ```
 
-### Debian / Ubuntu
+The installer automatically detects your distribution and installs all dependencies.
 
-```bash
-git clone https://github.com/gerchann/dd-flash.git
-cd dd-flash
-./scripts/install.sh
-```
+### Supported Distributions
 
-`install.sh` automaticky zjistí distribuci a nainstaluje potřebné dependencies.
+| Base | Derivatives |
+|---|---|
+| Arch Linux | Manjaro, EndeavourOS, Garuda, Artix, ArcoLinux |
+| Fedora | RHEL, CentOS, Rocky, AlmaLinux, Oracle Linux |
+| Debian | Linux Mint, Pop!_OS, elementary, Zorin, antiX, MX |
+| Ubuntu | Kubuntu, Xubuntu, Lubuntu, Neon |
 
-## Odinstalace
+### Uninstall
 
 ```bash
 ./scripts/uninstall.sh
 ```
 
-## Požadavky
+### Check Dependencies
+
+```bash
+./scripts/install.sh --check
+```
+
+## Requirements
 
 - Python 3.10+
 - GTK 4.0+
@@ -55,47 +54,47 @@ cd dd-flash
 - `pkexec` (polkit)
 - `lsblk` (util-linux)
 
-## Použití
+## Usage
 
 ```bash
-# Spuštění
+# Launch
 dd-flash
 
-# Nebo přímo
+# Or directly
 python3 -m dd_flash.main
 
-# S otevřením souboru
+# Open with a file
 dd-flash /path/to/image.iso
 ```
 
-## Architektura
+## Architecture
 
 ```
 src/dd_flash/
-├── main.py            # Vstupní bod aplikace
-├── window.py          # Hlavní okno
-├── disk_manager.py    # Správa disků (lsblk, validace)
-├── flash_manager.py   # Správa dd procesu
-├── polkit.py          # Polkit integrace
-├── helper.py          # Privilegovaný helper (pkexec)
+├── main.py            # Application entry point
+├── window.py          # Main window
+├── disk_manager.py    # Disk management (lsblk, validation)
+├── flash_manager.py   # dd process management
+├── polkit.py          # Polkit integration
+├── helper.py          # Privileged helper (pkexec)
 └── ui/
-    ├── file_chooser.py    # Výběr ISO/IMG
-    ├── disk_selector.py   # Výběr cílového disku
-    ├── progress_view.py   # Zobrazení progressu
-    └── dialogs.py         # Dialogy (potvrzení, chyby)
+    ├── file_chooser.py    # ISO/IMG selection
+    ├── disk_selector.py   # Target disk selection
+    ├── progress_view.py   # Progress display
+    └── dialogs.py         # Confirmation/error dialogs
 ```
 
-## Bezpečnost
+## Safety
 
-DD Flash provádí následující kontroly před zápisem:
+DD Flash performs the following checks before writing:
 
-1. Zařízení musí být **removable**
-2. Zařízení musí být **USB**
-3. Zařízení nesmí obsahovat **root filesystem** (`/`)
-4. Zařízení nesmí obsahovat **kritické mountpointy** (`/home`, `/boot`, `/usr`, `/var`)
-5. Velikost image musí být **≤ velikosti zařízení**
-6. Před zápisem se **odmontují** všechny partition
+1. Device must be **removable**
+2. Device must be **USB**
+3. Device must not contain the **root filesystem** (`/`)
+4. Device must not contain **critical mountpoints** (`/home`, `/boot`, `/usr`, `/var`)
+5. Image size must be **≤ device size**
+6. All partitions are **unmounted** before writing
 
-## Licence
+## License
 
 GPL-3.0-or-later
