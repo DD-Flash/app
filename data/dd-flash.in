@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# DD Flash launcher script
-export PYTHONPATH="@PKGDATADIR@:${PYTHONPATH}"
-exec @PYTHON@ -m dd_flash.main "$@"
