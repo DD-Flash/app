@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "descriptive_name": "dd-flash",
+  "license": [
+    "GPL-3.0-or-later"
+  ],
+  "license_files": [],
+  "subproject_dir": "subprojects",
+  "subprojects": []
+}

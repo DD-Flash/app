@@ -1,0 +1,9 @@
+{
+  "/home/gerchann/dd-flash/src/dd_flash/helper.py": "/usr/lib/python3.14/site-packages/dd_flash/helper.py",
+  "/home/gerchann/dd-flash/build/dd-flash": "/usr/bin/dd-flash",
+  "/home/gerchann/dd-flash/data/com.gerchan.DDFlash.desktop": "/usr/share/applications/com.gerchan.DDFlash.desktop",
+  "/home/gerchann/dd-flash/data/com.gerchan.DDFlash.metainfo.xml": "/usr/share/metainfo/com.gerchan.DDFlash.metainfo.xml",
+  "/home/gerchann/dd-flash/data/icons/com.gerchan.DDFlash.svg": "/usr/share/icons/hicolor/scalable/apps/com.gerchan.DDFlash.svg",
+  "/home/gerchann/dd-flash/data/com.gerchan.DDFlash.policy": "/usr/share/polkit-1/actions/com.gerchan.DDFlash.policy",
+  "/home/gerchann/dd-flash/src/dd_flash": "/usr/lib/python3.14/site-packages/dd_flash"
+}
