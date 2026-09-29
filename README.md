@@ -95,6 +95,10 @@ DD Flash performs the following checks before writing:
 5. Image size must be **≤ device size**
 6. All partitions are **unmounted** before writing
 
+## Author
+
+**gerchanisko**
+
 ## License
 
 GPL-3.0-or-later
