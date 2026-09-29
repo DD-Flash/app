@@ -1,0 +1,46 @@
+{
+  "targets": {},
+  "data": {
+    "/home/gerchann/dd-flash/src/dd_flash/helper.py": {
+      "destination": "{py_purelib}/dd_flash/helper.py",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/gerchann/dd-flash/data/com.gerchan.DDFlash.desktop": {
+      "destination": "{prefix}/share/applications/com.gerchan.DDFlash.desktop",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/gerchann/dd-flash/data/com.gerchan.DDFlash.metainfo.xml": {
+      "destination": "{prefix}/share/metainfo/com.gerchan.DDFlash.metainfo.xml",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/gerchann/dd-flash/data/icons/com.gerchan.DDFlash.svg": {
+      "destination": "{prefix}/share/icons/hicolor/scalable/apps/com.gerchan.DDFlash.svg",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/gerchann/dd-flash/data/com.gerchan.DDFlash.policy": {
+      "destination": "{prefix}/share/polkit-1/actions/com.gerchan.DDFlash.policy",
+      "tag": null,
+      "subproject": null
+    }
+  },
+  "configure": {
+    "/home/gerchann/dd-flash/build/dd-flash": {
+      "destination": "{prefix}/bin/dd-flash",
+      "tag": "runtime",
+      "subproject": null
+    }
+  },
+  "install_subdirs": {
+    "/home/gerchann/dd-flash/src/dd_flash": {
+      "destination": "{py_purelib}/dd_flash",
+      "tag": null,
+      "subproject": null,
+      "exclude_dirs": [],
+      "exclude_files": []
+    }
+  }
+}

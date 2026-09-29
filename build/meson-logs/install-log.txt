@@ -1,0 +1,32 @@
+# List of files installed by Meson
+# Does not contain files installed by custom scripts.
+/usr/lib/python3.14/site-packages/dd_flash/__init__.py
+/usr/lib/python3.14/site-packages/dd_flash/main.py
+/usr/lib/python3.14/site-packages/dd_flash/flash_manager.py
+/usr/lib/python3.14/site-packages/dd_flash/disk_manager.py
+/usr/lib/python3.14/site-packages/dd_flash/polkit.py
+/usr/lib/python3.14/site-packages/dd_flash/window.py
+/usr/lib/python3.14/site-packages/dd_flash/helper.py
+/usr/lib/python3.14/site-packages/dd_flash/ui/__init__.py
+/usr/lib/python3.14/site-packages/dd_flash/ui/dialogs.py
+/usr/lib/python3.14/site-packages/dd_flash/ui/progress_view.py
+/usr/lib/python3.14/site-packages/dd_flash/ui/disk_selector.py
+/usr/lib/python3.14/site-packages/dd_flash/ui/file_chooser.py
+/usr/lib/python3.14/site-packages/dd_flash/ui/__pycache__/dialogs.cpython-314.pyc
+/usr/lib/python3.14/site-packages/dd_flash/ui/__pycache__/disk_selector.cpython-314.pyc
+/usr/lib/python3.14/site-packages/dd_flash/ui/__pycache__/file_chooser.cpython-314.pyc
+/usr/lib/python3.14/site-packages/dd_flash/ui/__pycache__/__init__.cpython-314.pyc
+/usr/lib/python3.14/site-packages/dd_flash/ui/__pycache__/progress_view.cpython-314.pyc
+/usr/lib/python3.14/site-packages/dd_flash/__pycache__/disk_manager.cpython-314.pyc
+/usr/lib/python3.14/site-packages/dd_flash/__pycache__/flash_manager.cpython-314.pyc
+/usr/lib/python3.14/site-packages/dd_flash/__pycache__/helper.cpython-314.pyc
+/usr/lib/python3.14/site-packages/dd_flash/__pycache__/__init__.cpython-314.pyc
+/usr/lib/python3.14/site-packages/dd_flash/__pycache__/main.cpython-314.pyc
+/usr/lib/python3.14/site-packages/dd_flash/__pycache__/polkit.cpython-314.pyc
+/usr/lib/python3.14/site-packages/dd_flash/__pycache__/window.cpython-314.pyc
+/usr/lib/python3.14/site-packages/dd_flash/helper.py
+/usr/bin/dd-flash
+/usr/share/applications/com.gerchan.DDFlash.desktop
+/usr/share/metainfo/com.gerchan.DDFlash.metainfo.xml
+/usr/share/icons/hicolor/scalable/apps/com.gerchan.DDFlash.svg
+/usr/share/polkit-1/actions/com.gerchan.DDFlash.policy

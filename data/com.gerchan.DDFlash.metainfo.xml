@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.gerchan.DDFlash</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>DD Flash</name>
+  <summary>Modern GUI for safely writing ISO/IMG images to USB drives</summary>
+  <description>
+    <p>
+      DD Flash is a modern, minimalist GTK4/Libadwaita application for safely
+      writing ISO and IMG disk images to USB drives. It provides a simple,
+      intuitive interface with real-time progress monitoring and comprehensive
+      safety checks to prevent accidental data loss.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Simple, modern GTK4 + Libadwaita interface</li>
+      <li>Real-time progress with speed and ETA display</li>
+      <li>Comprehensive safety checks to prevent flashing to system disks</li>
+      <li>Automatic USB device detection</li>
+      <li>Support for .iso and .img files</li>
+      <li>Polkit integration for secure privilege escalation</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">com.gerchan.DDFlash.desktop</launchable>
+  <provides>
+    <binary>dd-flash</binary>
+  </provides>
+  <releases>
+    <release version="1.0.0" date="2026-09-29">
+      <description>
+        <p>Initial release of DD Flash.</p>
+      </description>
+    </release>
+  </releases>
+  <content_rating type="oars-1.1" />
+</component>
