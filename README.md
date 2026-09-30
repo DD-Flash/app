@@ -16,7 +16,7 @@ Modern GTK4/Libadwaita GUI for safely writing `.iso` and `.img` images to USB dr
 ### Quick Install
 
 ```bash
-git clone https://github.com/gerchann/dd-flash.git
+git clone https://github.com/DD-Flash/app.git
 cd dd-flash
 ./scripts/install.sh
 ```
